@@ -2,6 +2,7 @@ databases:
   - name: rails_boilerplate
     databaseName: rails_boilerplate_production
     user: rails_boilerplate
+    plan: free
 
 services:
   - type: web
@@ -9,7 +10,7 @@ services:
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
-    plan: free 
+    plan: free
     envVars:
       - key: DATABASE_URL
         fromDatabase:

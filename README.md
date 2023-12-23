@@ -2,7 +2,7 @@
 - config/initializers/devise.rb ignore or put the secret file in env
 
 Done
-
+- [x] Devise auth
 - [x] setup hot reload with rails_live_reload
 - [x] Removed const defaultTheme = require('tailwindcss/defaultTheme') because not found
 
